@@ -1,0 +1,9 @@
+services:
+  betaseries-mcp:
+    build: .
+    container_name: betaseries-mcp
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
